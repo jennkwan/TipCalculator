@@ -16,7 +16,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        var firstLoad = userDefaults.boolForKey("is_First_Load")
+        
+        firstLoad = false
+        
+        if (!firstLoad){
+            userDefaults.setFloat(0.18, forKey: "alright_service")
+            userDefaults.setFloat(0.20, forKey: "good_service")
+            userDefaults.setFloat(0.22, forKey: "excellent_service")
+            userDefaults.setBool(true, forKey: "is_first_load")
+            userDefaults.setFloat(0, forKey: "default_tip")
+            userDefaults.setInteger(0, forKey: "default_index")
+            userDefaults.setBool(false, forKey: "default_tip_changed")
+            userDefaults.setDouble(0.0, forKey: "previous_bill_time")
+            userDefaults.setFloat(0.0, forKey: "previous_bill_amount")
+            userDefaults.synchronize()
+        }
+        
+        
         return true
+    
     }
 
     func applicationWillResignActive(application: UIApplication) {
