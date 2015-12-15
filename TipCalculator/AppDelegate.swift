@@ -20,14 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let userDefaults = NSUserDefaults.standardUserDefaults()
         var firstLoad = userDefaults.boolForKey("is_First_Load")
         
-        firstLoad = false
+        //firstLoad = false
         
         if (!firstLoad){
             userDefaults.setFloat(0.18, forKey: "alright_service")
             userDefaults.setFloat(0.20, forKey: "good_service")
             userDefaults.setFloat(0.22, forKey: "excellent_service")
-            userDefaults.setBool(true, forKey: "is_first_load")
-            userDefaults.setFloat(0, forKey: "default_tip")
+            userDefaults.setBool(true, forKey: "is_First_Load")
+            userDefaults.setFloat(0.0, forKey: "default_tip")
             userDefaults.setInteger(0, forKey: "default_index")
             userDefaults.setBool(false, forKey: "default_tip_changed")
             userDefaults.setDouble(0.0, forKey: "previous_bill_time")

@@ -9,18 +9,51 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var defaultTipControl: UISegmentedControl!
+    
+    let userDefaults = NSUserDefaults.standardUserDefaults()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        defaultTipControl.selectedSegmentIndex = userDefaults.integerForKey("default_index")
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func onDefaultTipChanged(sender: AnyObject) {
+        
+        if (defaultTipControl.selectedSegmentIndex == 0){
+            
+            userDefaults.setFloat(userDefaults.floatForKey("alright_service"), forKey: "default_tip")
+            userDefaults.setInteger(0, forKey: "default_index")
+            userDefaults.setBool(true, forKey: "default_tip_changed")
+            
+        }
+        
+        else if (defaultTipControl.selectedSegmentIndex == 1){
+            
+            userDefaults.setFloat(userDefaults.floatForKey("good_service"), forKey: "default_tip")
+            userDefaults.setInteger(1, forKey: "default_index")
+            userDefaults.setBool(true, forKey: "default_tip_changed")
+        }
+        
+        else if (defaultTipControl.selectedSegmentIndex == 2){
+            
+            userDefaults.setFloat(userDefaults.floatForKey("excellent_service"), forKey: "default_tip")
+            userDefaults.setInteger(2, forKey: "default_index")
+            userDefaults.setBool(true, forKey: "default_tip_changed")
+        }
+    }
 
     /*
     // MARK: - Navigation
