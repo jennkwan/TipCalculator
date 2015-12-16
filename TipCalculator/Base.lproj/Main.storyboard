@@ -14,31 +14,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ny2-c7-aYp">
-                                <rect key="frame" x="20" y="110" width="134" height="21"/>
+                                <rect key="frame" x="20" y="109" width="134" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DUF-Dk-Bna">
-                                <rect key="frame" x="20" y="162" width="66" height="34"/>
+                                <rect key="frame" x="20" y="155" width="66" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BAl-XB-DOS">
-                                <rect key="frame" x="167" y="162" width="133" height="34"/>
+                                <rect key="frame" x="167" y="155" width="133" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" id="Fio-QA-iqB">
-                                <rect key="frame" x="20" y="209" width="280" height="5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" id="Qha-4i-VHo">
                                 <rect key="frame" x="167" y="106" width="133" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -46,14 +41,14 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$100.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="K4Q-zV-9sk">
-                                <rect key="frame" x="134" y="242" width="161" height="30"/>
+                                <rect key="frame" x="139" y="238" width="161" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Sea-q4-POF">
-                                <rect key="frame" x="20" y="296" width="275" height="29"/>
+                                <rect key="frame" x="20" y="197" width="280" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="18%"/>
@@ -74,12 +69,24 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hxe-zB-rir">
-                                <rect key="frame" x="20" y="242" width="59" height="30"/>
+                                <rect key="frame" x="20" y="238" width="59" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pusheen_angry.jpg" id="NVt-Pp-bUo">
+                                <rect key="frame" x="0.0" y="64" width="295" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pusheen_happy.jpg" id="Sde-C2-9CC">
+                                <rect key="frame" x="60" y="64" width="185" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fat_pusheen.gif" id="mcn-39-vcv">
+                                <rect key="frame" x="44" y="65" width="216" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -95,7 +102,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="alrightServiceImage" destination="NVt-Pp-bUo" id="hQC-xm-5hw"/>
+                        <outlet property="animationImage" destination="NVt-Pp-bUo" id="fGf-eG-lum"/>
                         <outlet property="billField" destination="by5-Ob-hrg" id="22P-yY-Gtd"/>
+                        <outlet property="excellentServiceImage" destination="Sde-C2-9CC" id="hWZ-Yp-4kA"/>
+                        <outlet property="goodServiceImage" destination="mcn-39-vcv" id="13X-KC-ruP"/>
                         <outlet property="tipControl" destination="Sea-q4-POF" id="jw4-jZ-RXg"/>
                         <outlet property="tipLabel" destination="BAl-XB-DOS" id="nr1-Jf-Apj"/>
                         <outlet property="totalLabel" destination="K4Q-zV-9sk" id="DAK-CC-350"/>
@@ -168,4 +179,9 @@
             <point key="canvasLocation" x="263" y="344"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fat_pusheen.gif" width="400" height="300"/>
+        <image name="pusheen_angry.jpg" width="400" height="196"/>
+        <image name="pusheen_happy.jpg" width="200" height="200"/>
+    </resources>
 </document>

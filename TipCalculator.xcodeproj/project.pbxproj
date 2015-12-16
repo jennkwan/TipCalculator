@@ -15,6 +15,16 @@
 		763382351C1E00E200A8DE61 /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763382341C1E00E200A8DE61 /* TipCalculatorTests.swift */; };
 		763382401C1E00E200A8DE61 /* TipCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7633823F1C1E00E200A8DE61 /* TipCalculatorUITests.swift */; };
 		7633824E1C1E358200A8DE61 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7633824D1C1E358200A8DE61 /* SettingsViewController.swift */; };
+		7654CF701C20FFD60072C3B5 /* fat_pusheen.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7654CF6F1C20FFD60072C3B5 /* fat_pusheen.gif */; };
+		7654CF721C20FFE30072C3B5 /* pusheen_angry.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7654CF711C20FFE30072C3B5 /* pusheen_angry.jpg */; };
+		7654CF741C20FFEB0072C3B5 /* pusheen_angry_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7654CF731C20FFEB0072C3B5 /* pusheen_angry_gif.gif */; };
+		7654CF761C21005E0072C3B5 /* Pusheen_content_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7654CF751C21005E0072C3B5 /* Pusheen_content_gif.gif */; };
+		7654CF781C21006B0072C3B5 /* pusheen_happy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7654CF771C21006B0072C3B5 /* pusheen_happy.jpg */; };
+		7654CF7A1C2100730072C3B5 /* pusheen_happy_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7654CF791C2100730072C3B5 /* pusheen_happy_gif.gif */; };
+		769C867F1C1FCA2000B7EBD1 /* caticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 769C867E1C1FCA2000B7EBD1 /* caticon.png */; };
+		769C86811C1FD13300B7EBD1 /* alright_service.png in Resources */ = {isa = PBXBuildFile; fileRef = 769C86801C1FD13300B7EBD1 /* alright_service.png */; };
+		769C86831C1FD14200B7EBD1 /* good_service.png in Resources */ = {isa = PBXBuildFile; fileRef = 769C86821C1FD14200B7EBD1 /* good_service.png */; };
+		769C86851C1FD15000B7EBD1 /* excellent_service.png in Resources */ = {isa = PBXBuildFile; fileRef = 769C86841C1FD15000B7EBD1 /* excellent_service.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +59,16 @@
 		7633823F1C1E00E200A8DE61 /* TipCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorUITests.swift; sourceTree = "<group>"; };
 		763382411C1E00E200A8DE61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7633824D1C1E358200A8DE61 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		7654CF6F1C20FFD60072C3B5 /* fat_pusheen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = fat_pusheen.gif; path = ../../fat_pusheen.gif; sourceTree = "<group>"; };
+		7654CF711C20FFE30072C3B5 /* pusheen_angry.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pusheen_angry.jpg; path = ../../pusheen_angry.jpg; sourceTree = "<group>"; };
+		7654CF731C20FFEB0072C3B5 /* pusheen_angry_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = pusheen_angry_gif.gif; path = ../../pusheen_angry_gif.gif; sourceTree = "<group>"; };
+		7654CF751C21005E0072C3B5 /* Pusheen_content_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Pusheen_content_gif.gif; path = ../../Pusheen_content_gif.gif; sourceTree = "<group>"; };
+		7654CF771C21006B0072C3B5 /* pusheen_happy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pusheen_happy.jpg; path = ../../pusheen_happy.jpg; sourceTree = "<group>"; };
+		7654CF791C2100730072C3B5 /* pusheen_happy_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = pusheen_happy_gif.gif; path = ../../pusheen_happy_gif.gif; sourceTree = "<group>"; };
+		769C867E1C1FCA2000B7EBD1 /* caticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = caticon.png; path = ../../caticon.png; sourceTree = "<group>"; };
+		769C86801C1FD13300B7EBD1 /* alright_service.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alright_service.png; path = ../../alright_service.png; sourceTree = "<group>"; };
+		769C86821C1FD14200B7EBD1 /* good_service.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = good_service.png; path = ../../good_service.png; sourceTree = "<group>"; };
+		769C86841C1FD15000B7EBD1 /* excellent_service.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = excellent_service.png; path = ../../excellent_service.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +122,18 @@
 				7633821F1C1E00E100A8DE61 /* AppDelegate.swift */,
 				763382211C1E00E100A8DE61 /* ViewController.swift */,
 				763382231C1E00E100A8DE61 /* Main.storyboard */,
+				7654CF791C2100730072C3B5 /* pusheen_happy_gif.gif */,
+				7654CF771C21006B0072C3B5 /* pusheen_happy.jpg */,
+				7654CF751C21005E0072C3B5 /* Pusheen_content_gif.gif */,
+				7654CF731C20FFEB0072C3B5 /* pusheen_angry_gif.gif */,
+				7654CF711C20FFE30072C3B5 /* pusheen_angry.jpg */,
+				7654CF6F1C20FFD60072C3B5 /* fat_pusheen.gif */,
+				769C86841C1FD15000B7EBD1 /* excellent_service.png */,
+				769C86821C1FD14200B7EBD1 /* good_service.png */,
+				769C86801C1FD13300B7EBD1 /* alright_service.png */,
 				7633824D1C1E358200A8DE61 /* SettingsViewController.swift */,
 				763382261C1E00E100A8DE61 /* Assets.xcassets */,
+				769C867E1C1FCA2000B7EBD1 /* caticon.png */,
 				763382281C1E00E100A8DE61 /* LaunchScreen.storyboard */,
 				7633822B1C1E00E100A8DE61 /* Info.plist */,
 			);
@@ -232,9 +262,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				769C86831C1FD14200B7EBD1 /* good_service.png in Resources */,
+				769C86851C1FD15000B7EBD1 /* excellent_service.png in Resources */,
+				7654CF761C21005E0072C3B5 /* Pusheen_content_gif.gif in Resources */,
+				7654CF721C20FFE30072C3B5 /* pusheen_angry.jpg in Resources */,
 				7633822A1C1E00E100A8DE61 /* LaunchScreen.storyboard in Resources */,
+				7654CF781C21006B0072C3B5 /* pusheen_happy.jpg in Resources */,
+				769C86811C1FD13300B7EBD1 /* alright_service.png in Resources */,
 				763382271C1E00E100A8DE61 /* Assets.xcassets in Resources */,
+				7654CF701C20FFD60072C3B5 /* fat_pusheen.gif in Resources */,
 				763382251C1E00E100A8DE61 /* Main.storyboard in Resources */,
+				7654CF741C20FFEB0072C3B5 /* pusheen_angry_gif.gif in Resources */,
+				7654CF7A1C2100730072C3B5 /* pusheen_happy_gif.gif in Resources */,
+				769C867F1C1FCA2000B7EBD1 /* caticon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

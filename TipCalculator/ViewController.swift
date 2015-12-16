@@ -12,25 +12,25 @@ class ViewController: UIViewController
     {
 
     @IBOutlet weak var billField: UITextField!
-    
     @IBOutlet weak var tipLabel: UILabel!
-    
     @IBOutlet weak var totalLabel: UILabel!
-    
     @IBOutlet weak var tipControl: UISegmentedControl!
-    
+    @IBOutlet weak var animationImage: UIImageView!
+    @IBOutlet weak var alrightServiceImage: UIImageView!
+    @IBOutlet weak var goodServiceImage: UIImageView!
+    @IBOutlet weak var excellentServiceImage: UIImageView!
     
     var tipPecent: Float!
     let userDefaults = NSUserDefaults.standardUserDefaults()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        print("did load")
+        
         tipPecent = userDefaults.floatForKey("default_tip")
         tipControl.selectedSegmentIndex = userDefaults.integerForKey("default_index")
 
+        
         
         let now = NSDate.timeIntervalSinceReferenceDate()
         let ten_min = 600.0
@@ -66,6 +66,8 @@ class ViewController: UIViewController
             calculate(userDefaults.floatForKey("default_tip"))
             userDefaults.setBool(false, forKey: "default_tip_changed")
         }
+        selectImage(tipControl.selectedSegmentIndex)
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -86,6 +88,7 @@ class ViewController: UIViewController
         calculate(tipPercentage)
         
         userDefaults.setDouble(NSDate.timeIntervalSinceReferenceDate(), forKey: "previous_bill_time")
+        selectImage(tipControl.selectedSegmentIndex)
         
         
         
@@ -125,6 +128,32 @@ class ViewController: UIViewController
         tipLabel.text = currencyFormatter.stringFromNumber(tip)
         totalLabel.text = currencyFormatter.stringFromNumber(total)
         
+        
+        
+    }
+    
+    func selectImage(index : Int) {
+        
+        if (index == 0) {
+            alrightServiceImage.hidden = false
+            goodServiceImage.hidden = true
+            excellentServiceImage.hidden = true
+            
+        }
+        
+        else if (index == 1) {
+            alrightServiceImage.hidden = true
+            goodServiceImage.hidden = false
+            excellentServiceImage.hidden = true
+            
+        }
+        
+        else if (index == 2) {
+            alrightServiceImage.hidden = true
+            goodServiceImage.hidden = true
+            excellentServiceImage.hidden = false
+            
+        }
         
         
     }
