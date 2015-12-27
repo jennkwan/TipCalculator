@@ -21,6 +21,7 @@
 		7654CF761C21005E0072C3B5 /* Pusheen_content_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7654CF751C21005E0072C3B5 /* Pusheen_content_gif.gif */; };
 		7654CF781C21006B0072C3B5 /* pusheen_happy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7654CF771C21006B0072C3B5 /* pusheen_happy.jpg */; };
 		7654CF7A1C2100730072C3B5 /* pusheen_happy_gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7654CF791C2100730072C3B5 /* pusheen_happy_gif.gif */; };
+		767257E21C3084F200DFD865 /* AnimatedGIFImageSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 767257E11C3084F200DFD865 /* AnimatedGIFImageSerialization.m */; };
 		769C867F1C1FCA2000B7EBD1 /* caticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 769C867E1C1FCA2000B7EBD1 /* caticon.png */; };
 		769C86811C1FD13300B7EBD1 /* alright_service.png in Resources */ = {isa = PBXBuildFile; fileRef = 769C86801C1FD13300B7EBD1 /* alright_service.png */; };
 		769C86831C1FD14200B7EBD1 /* good_service.png in Resources */ = {isa = PBXBuildFile; fileRef = 769C86821C1FD14200B7EBD1 /* good_service.png */; };
@@ -65,6 +66,10 @@
 		7654CF751C21005E0072C3B5 /* Pusheen_content_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = Pusheen_content_gif.gif; path = ../../Pusheen_content_gif.gif; sourceTree = "<group>"; };
 		7654CF771C21006B0072C3B5 /* pusheen_happy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = pusheen_happy.jpg; path = ../../pusheen_happy.jpg; sourceTree = "<group>"; };
 		7654CF791C2100730072C3B5 /* pusheen_happy_gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = pusheen_happy_gif.gif; path = ../../pusheen_happy_gif.gif; sourceTree = "<group>"; };
+		767257DE1C30840600DFD865 /* GifAnimation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "GifAnimation-Bridging-Header.h"; path = "../../../Downloads/GifAnimation-master/GifAnimation/GifAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
+		767257DF1C3084F200DFD865 /* TipCalculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TipCalculator-Bridging-Header.h"; sourceTree = "<group>"; };
+		767257E01C3084F200DFD865 /* AnimatedGIFImageSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AnimatedGIFImageSerialization.h; path = "../../../Downloads/GifAnimation-master/GifAnimation/Objective-C Files/AnimatedGIFImageSerialization.h"; sourceTree = "<group>"; };
+		767257E11C3084F200DFD865 /* AnimatedGIFImageSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AnimatedGIFImageSerialization.m; path = "../../../Downloads/GifAnimation-master/GifAnimation/Objective-C Files/AnimatedGIFImageSerialization.m"; sourceTree = "<group>"; };
 		769C867E1C1FCA2000B7EBD1 /* caticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = caticon.png; path = ../../caticon.png; sourceTree = "<group>"; };
 		769C86801C1FD13300B7EBD1 /* alright_service.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alright_service.png; path = ../../alright_service.png; sourceTree = "<group>"; };
 		769C86821C1FD14200B7EBD1 /* good_service.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = good_service.png; path = ../../good_service.png; sourceTree = "<group>"; };
@@ -119,10 +124,12 @@
 		7633821E1C1E00E100A8DE61 /* TipCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				767257E31C3087AE00DFD865 /* Objective-C Files */,
 				7633821F1C1E00E100A8DE61 /* AppDelegate.swift */,
 				763382211C1E00E100A8DE61 /* ViewController.swift */,
 				763382231C1E00E100A8DE61 /* Main.storyboard */,
 				7654CF791C2100730072C3B5 /* pusheen_happy_gif.gif */,
+				767257DE1C30840600DFD865 /* GifAnimation-Bridging-Header.h */,
 				7654CF771C21006B0072C3B5 /* pusheen_happy.jpg */,
 				7654CF751C21005E0072C3B5 /* Pusheen_content_gif.gif */,
 				7654CF731C20FFEB0072C3B5 /* pusheen_angry_gif.gif */,
@@ -136,6 +143,7 @@
 				769C867E1C1FCA2000B7EBD1 /* caticon.png */,
 				763382281C1E00E100A8DE61 /* LaunchScreen.storyboard */,
 				7633822B1C1E00E100A8DE61 /* Info.plist */,
+				767257DF1C3084F200DFD865 /* TipCalculator-Bridging-Header.h */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -156,6 +164,15 @@
 				763382411C1E00E200A8DE61 /* Info.plist */,
 			);
 			path = TipCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		767257E31C3087AE00DFD865 /* Objective-C Files */ = {
+			isa = PBXGroup;
+			children = (
+				767257E01C3084F200DFD865 /* AnimatedGIFImageSerialization.h */,
+				767257E11C3084F200DFD865 /* AnimatedGIFImageSerialization.m */,
+			);
+			name = "Objective-C Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				767257E21C3084F200DFD865 /* AnimatedGIFImageSerialization.m in Sources */,
 				763382221C1E00E100A8DE61 /* ViewController.swift in Sources */,
 				763382201C1E00E100A8DE61 /* AppDelegate.swift in Sources */,
 				7633824E1C1E358200A8DE61 /* SettingsViewController.swift in Sources */,
@@ -443,11 +461,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CodePath.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TipCalculator/TipCalculator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -456,11 +477,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = TipCalculator/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CodePath.TipCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TipCalculator/TipCalculator-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
