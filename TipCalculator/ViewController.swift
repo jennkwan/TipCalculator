@@ -138,10 +138,10 @@ class ViewController: UIViewController
             alrightServiceImage.hidden = false
             goodServiceImage.hidden = true
             excellentServiceImage.hidden = true
-            let image:UIImage = UIImage(named: "Pusheen_content_gif.gif")!
-            var data:NSData = try!
-                AnimatedGIFImageSerialization.animatedGIFDataWithImage(image, duration: 0, loopCount: 0)
-            alrightServiceImage.image = UIImage(data: data)
+//            let image:UIImage = UIImage(named: "Pusheen_content_gif.gif")!
+//            var data:NSData = try!
+//                AnimatedGIFImageSerialization.animatedGIFDataWithImage(image, duration: 0, loopCount: 0)
+//            alrightServiceImage.image = UIImage(data: data)
             
             
             
