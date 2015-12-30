@@ -34,24 +34,27 @@ class SettingsViewController: UIViewController {
         
         if (defaultTipControl.selectedSegmentIndex == 0){
             
-            userDefaults.setFloat(userDefaults.floatForKey("alright_service"), forKey: "default_tip")
+           // userDefaults.setFloat(userDefaults.floatForKey("alright_service"), forKey: "default_tip")
             userDefaults.setInteger(0, forKey: "default_index")
-            userDefaults.setBool(true, forKey: "default_tip_changed")
+            userDefaults.setInteger(0, forKey: "current_index")
+           // userDefaults.setBool(true, forKey: "default_tip_changed")
             
         }
         
         else if (defaultTipControl.selectedSegmentIndex == 1){
             
-            userDefaults.setFloat(userDefaults.floatForKey("good_service"), forKey: "default_tip")
+            //userDefaults.setFloat(userDefaults.floatForKey("good_service"), forKey: "default_tip")
             userDefaults.setInteger(1, forKey: "default_index")
-            userDefaults.setBool(true, forKey: "default_tip_changed")
+            userDefaults.setInteger(1, forKey: "current_index")
+            //userDefaults.setBool(true, forKey: "default_tip_changed")
         }
         
         else if (defaultTipControl.selectedSegmentIndex == 2){
             
-            userDefaults.setFloat(userDefaults.floatForKey("excellent_service"), forKey: "default_tip")
+            //userDefaults.setFloat(userDefaults.floatForKey("excellent_service"), forKey: "default_tip")
             userDefaults.setInteger(2, forKey: "default_index")
-            userDefaults.setBool(true, forKey: "default_tip_changed")
+            userDefaults.setInteger(2, forKey: "current_index")
+            //userDefaults.setBool(true, forKey: "default_tip_changed")
         }
     }
 

@@ -51,9 +51,9 @@
                                 <rect key="frame" x="20" y="197" width="280" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="18%"/>
+                                    <segment title="15%"/>
                                     <segment title="20%"/>
-                                    <segment title="22%"/>
+                                    <segment title="25%"/>
                                 </segments>
                                 <connections>
                                     <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0U0-p5-F68"/>
@@ -75,16 +75,16 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pusheen_angry.jpg" id="NVt-Pp-bUo">
-                                <rect key="frame" x="0.0" y="64" width="295" height="185"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alright_service.gif" id="NVt-Pp-bUo">
+                                <rect key="frame" x="46" y="64" width="217" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pusheen_happy.jpg" id="Sde-C2-9CC">
-                                <rect key="frame" x="60" y="64" width="185" height="171"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="good_service.gif" id="mcn-39-vcv">
+                                <rect key="frame" x="46" y="64" width="217" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fat_pusheen.gif" id="mcn-39-vcv">
-                                <rect key="frame" x="44" y="65" width="216" height="203"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="excellent_service.gif" id="Sde-C2-9CC">
+                                <rect key="frame" x="46" y="64" width="217" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -103,7 +103,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="alrightServiceImage" destination="NVt-Pp-bUo" id="hQC-xm-5hw"/>
-                        <outlet property="animationImage" destination="NVt-Pp-bUo" id="fGf-eG-lum"/>
                         <outlet property="billField" destination="by5-Ob-hrg" id="22P-yY-Gtd"/>
                         <outlet property="excellentServiceImage" destination="Sde-C2-9CC" id="hWZ-Yp-4kA"/>
                         <outlet property="goodServiceImage" destination="mcn-39-vcv" id="13X-KC-ruP"/>
@@ -119,7 +118,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="670" y="344"/>
+            <point key="canvasLocation" x="621" y="261"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="mQr-i7-Vqy">
@@ -140,9 +139,9 @@
                                 <rect key="frame" x="20" y="129" width="280" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="18%"/>
+                                    <segment title="15%"/>
                                     <segment title="20%"/>
-                                    <segment title="22%"/>
+                                    <segment title="25%"/>
                                 </segments>
                                 <connections>
                                     <action selector="onDefaultTipChanged:" destination="kX4-wy-unM" eventType="valueChanged" id="jBX-Ps-TDZ"/>
@@ -180,8 +179,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="fat_pusheen.gif" width="400" height="300"/>
-        <image name="pusheen_angry.jpg" width="400" height="196"/>
-        <image name="pusheen_happy.jpg" width="200" height="200"/>
+        <image name="alright_service.gif" width="250" height="177"/>
+        <image name="excellent_service.gif" width="300" height="226"/>
+        <image name="good_service.gif" width="325" height="241"/>
     </resources>
 </document>

@@ -15,44 +15,50 @@ class ViewController: UIViewController
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var tipControl: UISegmentedControl!
-    @IBOutlet weak var animationImage: UIImageView!
     @IBOutlet weak var alrightServiceImage: UIImageView!
     @IBOutlet weak var goodServiceImage: UIImageView!
     @IBOutlet weak var excellentServiceImage: UIImageView!
     
-    var tipPecent: Float!
     let userDefaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        tipPecent = userDefaults.floatForKey("default_tip")
-        tipControl.selectedSegmentIndex = userDefaults.integerForKey("default_index")
 
-        
-        
         let now = NSDate.timeIntervalSinceReferenceDate()
         let ten_min = 600.0
         
         print(userDefaults.doubleForKey("previous_bill_time"))
         print(userDefaults.floatForKey("previous_bill_amount"))
         
-        if ((now - userDefaults.doubleForKey("previous_bill_time")) < ten_min ) {
+        if ((now - userDefaults.doubleForKey("previous_bill_time")) < ten_min && userDefaults.floatForKey("previous_bill_amount") > 0.0) {
             
             billField.text = String(userDefaults.floatForKey("previous_bill_amount"))
-            calculate(userDefaults.floatForKey("default_tip"))
+            tipControl.selectedSegmentIndex = userDefaults.integerForKey("current_index")
+            calculate()
             
         } else {
         
+            tipControl.selectedSegmentIndex = userDefaults.integerForKey("default_index")
             tipLabel.text = "0.00"
             totalLabel.text = "0.00"
         }
         
+        let image1 : UIImage = UIImage (named: "alright_service.gif")!
+        var data1:NSData = try! AnimatedGIFImageSerialization.animatedGIFDataWithImage(image1, duration:0, loopCount:0)
+        alrightServiceImage.image = UIImage(data:data1)
+        
+        let image2 : UIImage = UIImage (named: "good_service.gif")!
+        var data2:NSData = try! AnimatedGIFImageSerialization.animatedGIFDataWithImage(image2, duration:0, loopCount:0)
+        goodServiceImage.image = UIImage(data:data2)
+        
+        let image3 : UIImage = UIImage (named: "excellent_service.gif")!
+        var data3:NSData = try! AnimatedGIFImageSerialization.animatedGIFDataWithImage(image3, duration:0, loopCount:0)
+        excellentServiceImage.image = UIImage(data:data3)
+        
+        
         billField.becomeFirstResponder()
-        
-        
-        //billField.enabled = true
         
     }
     
@@ -60,14 +66,9 @@ class ViewController: UIViewController
         super.viewWillAppear(animated)
         
         billField.becomeFirstResponder()
-        
-        if(userDefaults.boolForKey("default_tip_changed")) {
-            tipControl.selectedSegmentIndex = userDefaults.integerForKey("default_index")
-            calculate(userDefaults.floatForKey("default_tip"))
-            userDefaults.setBool(false, forKey: "default_tip_changed")
-        }
+        tipControl.selectedSegmentIndex = userDefaults.integerForKey("current_index")
+        calculate()
         selectImage(tipControl.selectedSegmentIndex)
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -83,37 +84,25 @@ class ViewController: UIViewController
 
     @IBAction func onEditingChanged(sender: AnyObject) {
         
-        let tipPercentages = [userDefaults.floatForKey("alright_service"), userDefaults.floatForKey("good_service"), userDefaults.floatForKey("excellent_service")]
-        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
-        calculate(tipPercentage)
+//        let tipPercentages = [userDefaults.floatForKey("alright_service"), userDefaults.floatForKey("good_service"), userDefaults.floatForKey("excellent_service")]
+//        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        calculate()
         
+        if (billField.text == "") {
+            userDefaults.setFloat(0.0, forKey: "previous_bill_amount")
+            
+        }
         userDefaults.setDouble(NSDate.timeIntervalSinceReferenceDate(), forKey: "previous_bill_time")
         selectImage(tipControl.selectedSegmentIndex)
         
         
         
-//        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
-//        let billAmount = NSString(string: billField.text!).floatValue
-//        let tip = billAmount * tipPercentage
-//        let total = billAmount + tip
-//        
-//        let currencyFormatter = NSNumberFormatter()
-//        currencyFormatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
-//        currencyFormatter.locale = NSLocale.currentLocale()
-//        
-//        tipLabel.text = currencyFormatter.stringFromNumber(tip)
-//        totalLabel.text = currencyFormatter.stringFromNumber(total)
-        
-        
-        
-        
-//        tipLabel.text = String(format: "$%.2f", tip)
-//        totalLabel.text = String(format: "$%.2f", total)
-        
     }
     
-    func calculate(tipPercent: Float) {
+    func calculate() {
         
+        let tipPercentages = [userDefaults.floatForKey("alright_service"), userDefaults.floatForKey("good_service"), userDefaults.floatForKey("excellent_service")]
+        let tipPercent = tipPercentages[tipControl.selectedSegmentIndex]
         let billAmount = NSString(string: billField.text!).floatValue
         print(billAmount)
         userDefaults.setFloat(billAmount, forKey: "previous_bill_amount")
@@ -128,8 +117,6 @@ class ViewController: UIViewController
         tipLabel.text = currencyFormatter.stringFromNumber(tip)
         totalLabel.text = currencyFormatter.stringFromNumber(total)
         
-        
-        
     }
     
     func selectImage(index : Int) {
@@ -138,12 +125,6 @@ class ViewController: UIViewController
             alrightServiceImage.hidden = false
             goodServiceImage.hidden = true
             excellentServiceImage.hidden = true
-//            let image:UIImage = UIImage(named: "Pusheen_content_gif.gif")!
-//            var data:NSData = try!
-//                AnimatedGIFImageSerialization.animatedGIFDataWithImage(image, duration: 0, loopCount: 0)
-//            alrightServiceImage.image = UIImage(data: data)
-            
-            
             
         }
         
@@ -160,8 +141,6 @@ class ViewController: UIViewController
             excellentServiceImage.hidden = false
             
         }
-        
-        
     }
 
     @IBAction func onTap(sender: AnyObject) {
