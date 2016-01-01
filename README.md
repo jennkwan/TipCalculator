@@ -4,7 +4,7 @@
 
 Submitted by: **Jennifer Kwan**
 
-Time spent: **X** hours spent in total
+Time spent: **20** hours spent in total
 
 ## User Stories
 
@@ -21,7 +21,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [X] List anything else that you can get done to improve the app functionality!
+- I have added gifs for the UI animation.
 
 ## Video Walkthrough 
 
@@ -34,6 +35,8 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+The biggest challenge that I've encountered while building this app lied mainly in the coding part. I am a novice to coding and have encountered some trouble figuring out the logic. Most of the time spent building this app was on trying to get the required features to work properly through tweaking and rearranging the codes and the functions. 
 
 ## License
 
